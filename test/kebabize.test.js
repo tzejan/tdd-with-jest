@@ -9,3 +9,6 @@ test("hiThereBruceWayne should be kebabized to hi-there-bruce-wayne", function()
 });
 
 // write additional tests to ensure kebabize() works as expected
+test('camelsHave3Humps should be kebabized to camels-have-humps', function() {
+  expect(kebabize('camelsHave3Humps')).toBe("camels-have-humps");
+});
