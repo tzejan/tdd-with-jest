@@ -8,7 +8,16 @@ kebabize('camelsHave3Humps') // camels-have-humps
 */
 
 function kebabize(input) {
-    
+    var result = [];
+    for (var c of input){
+        if (c >= "A" && c <= "Z"){
+            result.push('-', c.toLowerCase());
+        }
+        else if (c >= "a" && c <= "z"){
+            result.push(c);
+        }
+    }
+    return result.join("");
 }
 
 module.exports = kebabize
