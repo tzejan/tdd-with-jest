@@ -20,3 +20,7 @@ test('1042 should be returned as "1000 + 40 + 2"', function() {
 test('400 should be returned as "400"', function() {
   expect(expandNumber(400)).toBe("400");
 });
+
+test('0 should be returned as ""', function() {
+  expect(expandNumber(0)).toBe("");
+});
