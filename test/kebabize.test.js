@@ -12,3 +12,7 @@ test("hiThereBruceWayne should be kebabized to hi-there-bruce-wayne", function()
 test('camelsHave3Humps should be kebabized to camels-have-humps', function() {
   expect(kebabize('camelsHave3Humps')).toBe("camels-have-humps");
 });
+
+test('"" should be kebabized to ""', function() {
+  expect(kebabize('')).toBe("");
+});
