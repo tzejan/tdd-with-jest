@@ -10,7 +10,7 @@ NOTE: All input will be whole numbers greater than 0.
 */
 
 function expandNumber() {
-    return '10 + 2'
+    return '10 + 2';
 }
 
 module.exports = expandNumber
