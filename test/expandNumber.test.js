@@ -11,4 +11,8 @@ test('42 should be returned as "40 + 2"', function() {
 test('142 should be returned as "100 + 40 + 2"', function() {
   expect(expandNumber(142)).toBe("100 + 40 + 2");
 });
+
+test('1042 should be returned as "1000 + 40 + 2"', function() {
+  expect(expandNumber(1042)).toBe("1000 + 40 + 2");
+});
 // write your own tests!

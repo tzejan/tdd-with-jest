@@ -10,10 +10,13 @@ NOTE: All input will be whole numbers greater than 0.
 */
 
 function expandNumber(num) {
-    numArray = [];
-    power = 1;
+    var numArray = [];
+    var power = 1;
     while (num){
-        numArray.push((num % 10) * power);
+        var numValue = (num % 10) * power;
+        if (numValue){
+            numArray.push(numValue);
+        }
         power *= 10;
         num = Math.floor(num/10);
     }
