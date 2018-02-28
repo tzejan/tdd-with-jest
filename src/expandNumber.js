@@ -9,8 +9,8 @@ NOTE: All input will be whole numbers greater than 0.
 
 */
 
-function expandNumber() {
-    return '10 + 2';
+function expandNumber(num) {
+    return num - (num % 10) + ' + ' + num % 10;
 }
 
 module.exports = expandNumber
