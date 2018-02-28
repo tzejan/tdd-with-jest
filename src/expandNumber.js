@@ -10,7 +10,15 @@ NOTE: All input will be whole numbers greater than 0.
 */
 
 function expandNumber(num) {
-    return num - (num % 10) + ' + ' + num % 10;
+    numArray = [];
+    power = 1;
+    while (num){
+        numArray.push((num % 10) * power);
+        power *= 10;
+        num = Math.floor(num/10);
+    }
+
+    return numArray.reverse().join(" + ");
 }
 
 module.exports = expandNumber
